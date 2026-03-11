@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 // Use a more reliable JSDelivr link for the worker
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
@@ -67,6 +68,7 @@ const App: React.FC = () => {
 
   return (
     <div className="app-container" onMouseUp={handleHighlight}>
+      <SpeedInsights />
       <header>
         <h1>PDF Reader</h1>
         <div className="controls">
