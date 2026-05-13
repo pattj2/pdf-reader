@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+dist
+
+# Local Storage (Personal Data)
+pdf_storage.json
+
+# Environment
+.env
+
+# Editor
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
